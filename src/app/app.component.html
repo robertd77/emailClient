@@ -1,6 +1,6 @@
 <div class="ui container">
     <div class="ui secondary pointing menu">
-        <a routerLink='/' class="item">Angular Email</a>
+        <a routerLink='/' class="ui item" id="ang">Angular Email</a>
         <div class="right menu">
             <ng-container *ngIf="signedIn">
                 <a class="ui item" routerLink="/inbox" routerLinkActive="active">
@@ -23,3 +23,8 @@
     <router-outlet></router-outlet>
 </div>
 
+<div class="ui inverted vertical footer segment">
+    <div style="background-color: black;" class="ui container">
+        &copy; Robert Dominato 2020
+    </div>
+</div>

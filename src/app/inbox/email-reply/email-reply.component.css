@@ -1,0 +1,8 @@
+.button.ui.primary {
+    background-color: blueviolet;
+    color: yellow;
+}
+
+.button.ui.primary:hover {
+    border: 2px solid yellow;
+}

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AuthService } from './auth/auth.service';
+import { ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,8 @@ import { AuthService } from './auth/auth.service';
 export class AppComponent {
   signedIn = false;
 
-constructor(private authService: AuthService) {}
+constructor(private authService: AuthService,
+            private elementRef: ElementRef) {}
 
 ngOnInit() {
   this.authService.signedIn$.subscribe((signedIn) => {
@@ -19,5 +21,9 @@ ngOnInit() {
   this.authService.checkAuth().subscribe(() => {
     
   });
+}
+
+ngAfterViewInit(){
+  this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = '#c2b9ed';
 }
 }

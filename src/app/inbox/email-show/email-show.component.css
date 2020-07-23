@@ -1,5 +1,10 @@
-.header {
+/* .header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+} */
+
+#reply {
+    float: right;
+    margin-top: 1rem;
 }

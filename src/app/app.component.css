@@ -1,0 +1,29 @@
+div.ui.secondary.pointing.menu {
+    background-color: blueviolet;
+}
+
+#ang {
+    font-weight: bold;
+}
+
+
+.ui.item {
+    color: yellow;
+    text-decoration: bold;
+}
+
+:host {
+   margin-right: 5px;
+}
+
+.ui.container {
+    background-color: whitesmoke;
+    padding-left: 5px;
+    padding-bottom: 2px;
+}
+
+.footer {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+}
